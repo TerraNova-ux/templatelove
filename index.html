@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Cherivelle | Forever & Always</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Dancing+Script:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap" rel="stylesheet" />
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="romantic-theme">
+  <!-- Interactive Canvas Background for floating petals & stars -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Ambient Sound & Controls Bar -->
+  <header class="top-nav">
+    <div class="logo-text">
+      <span class="heart-pulse">💖</span> Cherivelle &amp; Me
+    </div>
+    <div class="nav-actions">
+      <button id="music-toggle-btn" class="pill-btn" title="Toggle Soft Ambient Melodies">
+        <i class="fa-solid fa-music"></i>
+        <span id="music-label">Play Harmony</span>
+        <div class="sound-wave" id="sound-wave">
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </button>
+      <button id="theme-toggle-btn" class="pill-btn icon-only" title="Toggle Candlelight / Moonlight">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="badge-pill">
+        <i class="fa-solid fa-sparkles"></i> Specially Crafted For Cherivelle
+      </div>
+      <h1 class="hero-title">
+        To My Dearest <span class="highlight-name">Cherivelle</span>
+      </h1>
+      <p class="hero-subtitle">
+        "In every quiet moment and through every storm, you are my steady anchor, my sweetest joy, and the greatest partner I could ever dream of."
+      </p>
+
+      <div class="hero-actions">
+        <button id="open-letter-btn" class="btn btn-primary">
+          <i class="fa-solid fa-envelope-open-text"></i> Open Your Letter
+        </button>
+        <a href="#strength-section" class="btn btn-secondary">
+          <i class="fa-solid fa-heart"></i> Why You Mean Everything
+        </a>
+      </div>
+
+      <!-- Love Counter -->
+      <div class="counter-card glass-panel">
+        <p class="counter-title"><i class="fa-solid fa-hourglass-half"></i> Cherishing Every Second With You</p>
+        <div class="counter-grid" id="timer-display">
+          <div class="time-box"><span class="time-num" id="days">--</span><span class="time-label">Days</span></div>
+          <div class="time-box"><span class="time-num" id="hours">--</span><span class="time-label">Hours</span></div>
+          <div class="time-box"><span class="time-num" id="minutes">--</span><span class="time-label">Minutes</span></div>
+          <div class="time-box"><span class="time-num" id="seconds">--</span><span class="time-label">Seconds</span></div>
+        </div>
+        <p class="counter-note" id="counter-note">And falling deeper in love with you every single day.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Message: You are strong & an extraordinary partner -->
+  <section id="strength-section" class="tribute-section">
+    <div class="container">
+      <div class="section-badge"><i class="fa-solid fa-shield-heart"></i> Unwavering &amp; True</div>
+      <h2 class="section-title">You Are Strong. You Are My Anchor.</h2>
+      <p class="section-desc">
+        There are days when life tests our spirits, but whenever I look at you, Cherivelle, I see pure resilience, boundless grace, and an unmatched heart.
+      </p>
+
+      <div class="tribute-grid">
+        <!-- Card 1 -->
+        <div class="tribute-card glass-panel">
+          <div class="icon-wrap gold-glow">
+            <i class="fa-solid fa-crown"></i>
+          </div>
+          <h3>Your Incredible Strength</h3>
+          <p>
+            You carry yourself with a quiet power that moves mountains. Even on days you doubt yourself, remember that your courage, dedication, and resilience inspire everyone around you—especially me.
+          </p>
+          <div class="card-quote">“You have survived 100% of your hardest days, and you did it with grace.”</div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="tribute-card glass-panel featured-card">
+          <div class="star-badge">Partner Of A Lifetime</div>
+          <div class="icon-wrap rose-glow">
+            <i class="fa-solid fa-hand-holding-heart"></i>
+          </div>
+          <h3>The Greatest Partner</h3>
+          <p>
+            Being your partner is the easiest, most rewarding blessing of my life. You listen, you understand, you stand by me, and you make every triumph sweeter and every burden lighter. You are the truest definition of a soulmate and teammate.
+          </p>
+          <div class="card-quote">“Together, there is nothing we cannot face, heal, or conquer.”</div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="tribute-card glass-panel">
+          <div class="icon-wrap amber-glow">
+            <i class="fa-solid fa-sun"></i>
+          </div>
+          <h3>Your Radiant Warmth</h3>
+          <p>
+            Your presence alone transforms any place into home. The way you care, your infectious warmth, and your soft compassion bring light into even the cloudiest moments of my life.
+          </p>
+          <div class="card-quote">“You are the peace in my chaos and the laughter in my days.”</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Jar of Love Notes -->
+  <section class="love-jar-section">
+    <div class="container">
+      <div class="jar-container glass-panel">
+        <div class="jar-header">
+          <div class="jar-icon"><i class="fa-solid fa-jar"></i></div>
+          <h2>Cherivelle's Jar of Reminders</h2>
+          <p>Whenever you need a reminder of how cherished and capable you are, pull a note from here.</p>
+        </div>
+
+        <div class="jar-display" id="jar-card-display">
+          <div class="jar-folded-note" id="folded-note">
+            <span class="note-sticker">💌 For Cherivelle</span>
+            <p class="note-text" id="random-note-text">
+              "Never forget how powerful, capable, and profoundly loved you are today."
+            </p>
+            <div class="note-author">— With all my love, always</div>
+          </div>
+        </div>
+
+        <button id="pick-note-btn" class="btn btn-primary pulse-hover">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> Open Another Love Note
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reasons Why Cherivelle is Cherished -->
+  <section class="reasons-section">
+    <div class="container">
+      <div class="section-badge"><i class="fa-solid fa-heart-pulse"></i> Endless Reasons</div>
+      <h2 class="section-title">Little Things I Adore About You</h2>
+      <p class="section-desc">Click each token to flip and read a personal reason why my heart chose you.</p>
+
+      <div class="flip-cards-grid">
+        <!-- Flip Card 1 -->
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front glass-panel">
+              <span class="card-num">01</span>
+              <div class="flip-icon"><i class="fa-solid fa-feather-pointed"></i></div>
+              <h3>Your Gentle Kindness</h3>
+              <p class="tap-hint">Tap to flip <i class="fa-solid fa-arrow-rotate-right"></i></p>
+            </div>
+            <div class="flip-back glass-panel">
+              <p>The subtle ways you care for the people around you, your empathy, and the softness in your eyes when you show genuine care.</p>
+              <div class="back-tag">Pure Gold ✨</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flip Card 2 -->
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front glass-panel">
+              <span class="card-num">02</span>
+              <div class="flip-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <h3>Your Unshakable Grit</h3>
+              <p class="tap-hint">Tap to flip <i class="fa-solid fa-arrow-rotate-right"></i></p>
+            </div>
+            <div class="flip-back glass-panel">
+              <p>You never back down when things get tough. You dust yourself off, hold your head high, and push forward. You are remarkably strong.</p>
+              <div class="back-tag">Unstoppable 🛡️</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flip Card 3 -->
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front glass-panel">
+              <span class="card-num">03</span>
+              <div class="flip-icon"><i class="fa-solid fa-comments"></i></div>
+              <h3>Our Conversations</h3>
+              <p class="tap-hint">Tap to flip <i class="fa-solid fa-arrow-rotate-right"></i></p>
+            </div>
+            <div class="flip-back glass-panel">
+              <p>From late-night deep thoughts to silly inside jokes, talking to you is my favorite pastime in the whole world. Time simply stops.</p>
+              <div class="back-tag">My Best Friend 🌙</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flip Card 4 -->
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front glass-panel">
+              <span class="card-num">04</span>
+              <div class="flip-icon"><i class="fa-solid fa-face-smile-beam"></i></div>
+              <h3>That Beautiful Smile</h3>
+              <p class="tap-hint">Tap to flip <i class="fa-solid fa-arrow-rotate-right"></i></p>
+            </div>
+            <div class="flip-back glass-panel">
+              <p>The way your eyes light up when you're genuinely happy. Seeing you smile is instant medicine for anything heavy on my shoulders.</p>
+              <div class="back-tag">Pure Sunshine ☀️</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flip Card 5 -->
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front glass-panel">
+              <span class="card-num">05</span>
+              <div class="flip-icon"><i class="fa-solid fa-gem"></i></div>
+              <h3>How Safe You Make Me Feel</h3>
+              <p class="tap-hint">Tap to flip <i class="fa-solid fa-arrow-rotate-right"></i></p>
+            </div>
+            <div class="flip-back glass-panel">
+              <p>With you, I don't have to put on a mask or pretend. You provide a sanctuary where I am accepted, heard, and cherished completely.</p>
+              <div class="back-tag">My Safe Haven 🏡</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flip Card 6 -->
+        <div class="flip-card">
+          <div class="flip-inner">
+            <div class="flip-front glass-panel">
+              <span class="card-num">06</span>
+              <div class="flip-icon"><i class="fa-solid fa-compass"></i></div>
+              <h3>You Walk Beside Me</h3>
+              <p class="tap-hint">Tap to flip <i class="fa-solid fa-arrow-rotate-right"></i></p>
+            </div>
+            <div class="flip-back glass-panel">
+              <p>You never hold back support. As a partner, you cheer for my dreams as passionately as your own. That unity is priceless.</p>
+              <div class="back-tag">Dream Team 🌟</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Memory Carousel / Moments Section -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="section-badge"><i class="fa-solid fa-camera-retro"></i> Precious Moments</div>
+      <h2 class="section-title">Our Keepsakes</h2>
+      <p class="section-desc">Snapshots of memories, smiles, and the journey that keeps getting better.</p>
+
+      <div class="polaroid-gallery">
+        <!-- Polaroid 1 -->
+        <div class="polaroid-card">
+          <div class="polaroid-pin"><i class="fa-solid fa-heart"></i></div>
+          <div class="polaroid-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=700&q=80" alt="Romantic sunset" />
+          </div>
+          <div class="polaroid-caption">Golden sunsets are pretty, but you outshine all of them.</div>
+        </div>
+
+        <!-- Polaroid 2 -->
+        <div class="polaroid-card rotated-right">
+          <div class="polaroid-pin"><i class="fa-solid fa-heart"></i></div>
+          <div class="polaroid-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=700&q=80" alt="Holding hands" />
+          </div>
+          <div class="polaroid-caption">Hand in hand through every adventure life brings.</div>
+        </div>
+
+        <!-- Polaroid 3 -->
+        <div class="polaroid-card rotated-left">
+          <div class="polaroid-pin"><i class="fa-solid fa-heart"></i></div>
+          <div class="polaroid-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=700&q=80" alt="Starry night" />
+          </div>
+          <div class="polaroid-caption">Under millions of stars, I’d still look for you.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Promises to Cherivelle -->
+  <section class="promises-section">
+    <div class="container">
+      <div class="section-badge"><i class="fa-solid fa-feather"></i> Sealed in My Heart</div>
+      <h2 class="section-title">My Everyday Promises To You</h2>
+      <p class="section-desc">These are not just words—they are vows I intend to honor day in and day out.</p>
+
+      <div class="promises-list">
+        <div class="promise-item glass-panel">
+          <div class="promise-checkbox active"><i class="fa-solid fa-check"></i></div>
+          <div class="promise-content">
+            <h4>To Remind You How Capable &amp; Strong You Are</h4>
+            <p>On days when you feel exhausted or uncertain, I will be your mirror reflecting back your strength, courage, and brilliant potential.</p>
+          </div>
+        </div>
+
+        <div class="promise-item glass-panel">
+          <div class="promise-checkbox active"><i class="fa-solid fa-check"></i></div>
+          <div class="promise-content">
+            <h4>To Always Be Your Safe Haven</h4>
+            <p>You will always have an open ear, arms to hold you, and a peaceful shoulder to rest upon whenever the world gets noisy.</p>
+          </div>
+        </div>
+
+        <div class="promise-item glass-panel">
+          <div class="promise-checkbox active"><i class="fa-solid fa-check"></i></div>
+          <div class="promise-content">
+            <h4>To Fight FOR Us, Never Against You</h4>
+            <p>To cherish communication, choose patience, and remember that our partnership is a sacred team that conquers anything together.</p>
+          </div>
+        </div>
+
+        <div class="promise-item glass-panel">
+          <div class="promise-checkbox active"><i class="fa-solid fa-check"></i></div>
+          <div class="promise-content">
+            <h4>To Celebrate Every Single Milestone</h4>
+            <p>Big wins or small steps—I promise to be your loudest cheerleader in every chapter of your journey, Cherivelle.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive "Send a Virtual Hug & Heart Burst" -->
+  <section class="hug-section">
+    <div class="container text-center">
+      <div class="glass-panel hug-box">
+        <h2 class="hug-title">Feeling Loved Right Now?</h2>
+        <p class="hug-desc">Tap &amp; hold the heart button below to shower love and send an instant virtual hug across any distance!</p>
+        
+        <button id="send-hug-btn" class="big-heart-btn" aria-label="Send Love Explosion">
+          <i class="fa-solid fa-heart"></i>
+          <span class="btn-ripple"></span>
+        </button>
+        <p class="hug-count-text">Love explosions sent: <strong id="hug-count">0</strong> 💕</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-heart">Made with endless devotion &amp; admiration</p>
+      <p class="footer-dedication">Dedicated exclusively to <strong>Cherivelle</strong></p>
+      <p class="footer-sub">“Today, tomorrow, and every day that follows.”</p>
+    </div>
+  </footer>
+
+  <!-- Modal: The Handwritten Love Letter -->
+  <div id="letter-modal" class="modal-backdrop">
+    <div class="envelope-wrapper">
+      <button id="close-modal-btn" class="close-btn" aria-label="Close Letter">&times;</button>
+      
+      <div class="letter-paper">
+        <div class="letter-wax-stamp">
+          <span>C</span>
+        </div>
+        <div class="letter-date" id="letter-current-date">Today &amp; Always</div>
+        <h2 class="letter-salutation">My Dearest Cherivelle,</h2>
+        
+        <div class="letter-body">
+          <p>
+            If there is one thing I want you to remember above everything else, it is this: <strong>you are extraordinarily strong, and you are the best partner anyone could ever have.</strong>
+          </p>
+          <p>
+            Life has a way of throwing unexpected challenges in our path, but the determination, poise, and dignity you carry inside you amaze me constantly. You don’t back down; you grow through whatever you go through. You face things with an inner fortitude that is rare and precious.
+          </p>
+          <p>
+            Thank you for being my teammate, my confidante, and my peace. Thank you for every shared laugh, every comforting word, and the gentle grace you bring into my world. You make everything brighter simply by being in it.
+          </p>
+          <p>
+            No matter where life takes us, I want you to walk with your head held high, knowing that you are cherished beyond measure, capable of extraordinary things, and never alone.
+          </p>
+          <p>
+            I am always right here, cheering for you, loving you, and proud to be by your side.
+          </p>
+        </div>
+
+        <div class="letter-signoff">
+          <p>With all my heart,</p>
+          <div class="handwritten-signature">Yours Always &amp; Forever ❤️</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
